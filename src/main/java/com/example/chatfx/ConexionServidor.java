@@ -21,16 +21,19 @@ public class ConexionServidor {
         this.usuario = usuario;
         try {
             this.salidaDatos = new DataOutputStream(socket.getOutputStream());
-            try {
-                salidaDatos.writeUTF(usuario + ": " + tfMensaje.getText() );
-                tfMensaje.setText("");
-            } catch (IOException ex) {
-                System.out.println("Error al intentar enviar un mensaje: " + ex.getMessage());
-            }
         } catch (IOException ex) {
             System.out.println("Error al crear el stream de salida : " + ex.getMessage());
         } catch (NullPointerException ex) {
             System.out.println("El socket no se creo correctamente. ");
+        }
+    }
+
+    public void enviarMsg(){
+        try {
+            salidaDatos.writeUTF(usuario + ": " + tfMensaje.getText() );
+            tfMensaje.setText("");
+        } catch (IOException ex) {
+            System.out.println("Error al intentar enviar un mensaje: " + ex.getMessage());
         }
     }
 }

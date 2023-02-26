@@ -10,6 +10,8 @@ import java.net.Socket;
 import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.ResourceBundle;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class Cliente implements Initializable {
 
@@ -19,11 +21,11 @@ public class Cliente implements Initializable {
     public TextField ipTF;
     public TextField portTF;
 
-    private Socket socket;
+    public static Socket socket;
 
-    private int puerto;
-    private String host;
-    private String usuario;
+    public static int puerto;
+    public static String host;
+    public static String usuario;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -60,21 +62,25 @@ public class Cliente implements Initializable {
     }
 
     public void enviarBT(ActionEvent event) {
-        new ConexionServidor(socket, textField, usuario);
+        ConexionServidor cs = new ConexionServidor(socket, textField, usuario);
+        cs.enviarMsg();
     }
 
     public void loginBT(ActionEvent event) {
-        this.host = ipTF.getText();
-        this.puerto = Integer.parseInt(portTF.getText());
-        this.usuario = nameTF.getText();
+        Cliente.host = ipTF.getText();
+        Cliente.puerto = Integer.parseInt(portTF.getText());
+        Cliente.usuario = nameTF.getText();
+        textArea.clear();
+        textArea.setText("Conectado al chat!" + System.lineSeparator());
+        System.out.println("Hasta aqui llego?");
+
         try {
-            socket = new Socket(host, puerto);
-            textArea.appendText("Conectado con el Server con exito" + System.lineSeparator());
-            recibirMensajesServidor();
-        } catch (UnknownHostException ex) {
-            System.out.println("No se ha podido conectar con el servidor (" + ex.getMessage() + ").");
-        } catch (IOException ex) {
-            System.out.println("No se ha podido conectar con el servidor (" + ex.getMessage() + ").");
+            Cliente.socket=new Socket(ipTF.getText(),Integer.parseInt(portTF.getText()));
+            Executor executor = Executors.newFixedThreadPool(2);
+            executor.execute(this::recibirMensajesServidor);
+            System.out.println("Conectado Correctamente");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
