@@ -16,7 +16,6 @@ public class ConexionCliente extends Thread implements Observer {
     public ConexionCliente (Socket socket, MensajesChat mensajes){
         this.socket = socket;
         this.mensajes = mensajes;
-
         try {
             entradaDatos = new DataInputStream(socket.getInputStream());
             salidaDatos = new DataOutputStream(socket.getOutputStream());
@@ -24,7 +23,6 @@ public class ConexionCliente extends Thread implements Observer {
             System.out.println("Error al crear los stream de entrada y salida : " + ex.getMessage());
         }
     }
-
     @Override
     public void run(){
         String mensajeRecibido;

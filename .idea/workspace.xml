@@ -10,9 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2da53975-b7a2-4500-9ffe-540af22c2c15" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/persistence/ArchivoUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/persistence/Persistence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/persistence/resources/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatfx/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatfx/ConexionServidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/ConexionServidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatfx/ConexionCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/ConexionCliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +46,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Samuel/Desktop/Universidad/Programacion 2/ChatServerCliente/chatFX/src/main/java",
+    "last_opened_file_path": "C:/Users/Samuel/Desktop/Universidad/Programacion 2/MaterialAyuda/chatFXejemplo",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="Cliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.chatfx.Cliente" />
       <module name="chatFX" />
@@ -117,5 +121,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
