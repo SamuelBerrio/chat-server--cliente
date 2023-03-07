@@ -10,13 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2da53975-b7a2-4500-9ffe-540af22c2c15" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/persistence/ArchivoUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/persistence/Persistence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/persistence/resources/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatfx/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatfx/ConexionCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatfx/ConexionCliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +40,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Samuel/Desktop/Universidad/Programacion 2/MaterialAyuda/chatFXejemplo",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Samuel/Desktop/Universidad/Programacion 2/ChatServerCliente/chatFX2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager" selected="Application.HelloApplication">
@@ -108,8 +108,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676900358531</updated>
+      <workItem from="1678026385951" duration="602000" />
+      <workItem from="1678105081116" duration="331000" />
+      <workItem from="1678107320910" duration="2342000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
